@@ -1,0 +1,66 @@
+Go CLI Commands
+1. go build - compiles go source code
+2. go run - compiles and executes
+3. go fmt - Formats all code in each file in current dir
+4. go install - Compiles and installs package
+5. go get - Downloads the raw source code of someone elses package
+6. go test - Runs tests assoiated with current project
+
+Package main
+package = project = workspace
+package might have many go codes.
+Each go code inside go package must have same package name
+
+2 types of packages - 1. executable and 2. reusable
+
+package main is the package that can be compiled and executed
+Ex: go build main.go # when you ls , you will see compiled version 'main'
+
+but if you use package name apart from main you wont see any compiled file
+
+package main must have function called main
+
+Reusable Packages:
+1. package calulator: Defines the package that can be use as dependency (helper_code)
+2. package uploader: Defines the package that can be use as dependency (helper_code)
+
+-----------------------------------------------------------------------------------------------------------
+Import fmt
+fmt is format, stdio library
+this basically tells package main will have access to all the codes inside fmt
+golang.org/pkg for all available packages
+-----------------------------------------------------------------------------------------------------------
+func()
+method decalration
+-----------------------------------------------------------------------------------------------------------
+1. package
+2. Import
+3. functions
+----------------------------------------------------------------------------------------------------------
+Variable declaration:
+
+bool, string, int, float64
+
+var card string = "Ace of spades"
+card := "Ace of spades"
+car = "Ace of daimonds"
+Both the lines are same. := is used only for Initialization. := says that it will identify the data type as string. 
+
+Initializations cannot be outside function 
+
+package main
+ 
+import "fmt"
+ 
+var deckSize int
+ 
+func main() {
+  deckSize = 50
+  fmt.Println(deckSize)
+}
+
+this is valid
+card - variable name
+
+dynamically typed - python, js, ruby - Donot care what value you are assigning variable with
+Statucally typed - C++, Java, Go

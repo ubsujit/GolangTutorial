@@ -1,0 +1,5 @@
+Issue1:
+PS C:\Users\sbalakatti\Documents\Learning21> go run main.go
+main.go:1:1: expected 'package', found 'EOF'
+Sol:
+save the file first
